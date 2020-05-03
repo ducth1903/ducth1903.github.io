@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="Mobirise v4.12.3, mobirise.com" name="generator" />
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport" />
+
+    <meta content="Daily Updates on COVID-19" name="description" />
+    <title>COVID-19</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese"
+        rel="stylesheet" />
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/facebook-plugin/style.css" rel="stylesheet" />
+    <link href="assets/mobirise/css/style.css" rel="stylesheet" />
+    <link href="assets/dropdown-menu/style.css" rel="stylesheet" />
+    <link as="style" href="assets/mobirise/css/mbr-additional.css" rel="preload" />
+    <link href="assets/mobirise/css/mbr-additional.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section data-rv-view="213" id="dropdown-menu-z">
+        <nav class="navbar navbar-expand-lg navbar-dropdown transparent bg-color">
+            <div class="container">
+                <button class="navbar-toggler" data-target="#exCollapsingNavbar" data-toggle="collapse" 
+                aria-controls="exCollapsingNavbar" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger-icon"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                    <ul class="navbar-nav nav mr-auto">
+                        <li class="nav-item"><a class="nav-link link" href="index.html">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link dropdown-toggle"
+                                data-toggle="dropdown-submenu" aria-expanded="false" id='navbarDropdown'>ABOUT ME</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="professionals.html">Professionals</a>
+                                <a class="dropdown-item" href="hobby_sports.html">Sports</a>
+                                <a class="dropdown-item" href="hobby_cars.html">Cars</a>
+                                <a class="dropdown-item" href="blogs.html">Blogs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a aria-expanded="false" class="nav-link link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="engine"><a href="https://mobirise.info/m">free website design templates</a></section>
+
+    <div>
+        <section class="mbr-section mbr-section--relative mbr-section--short-paddings mbr-after-navbar"
+            data-rv-view="98" id="msg-box1-w" style="background-color: rgb(29, 31, 30);">
+            <div class="mbr-section__container mbr-section__container--isolated container"
+                style="padding-top: 60px; padding-bottom: 60px;">
+                <div class="row" style="text-align: center;">
+                    <div class="col">
+                        <div class="card bg-info mb-3">
+                            <div class="card-header">Most Daily Cases</div>
+                            <h3 class="card-title">33,955</h3>
+                            <h3 class="card-title">(United States)</h3>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-danger mb-3">
+                            <div class="card-header">Most Daily Deaths</div>
+                            <h3 class="card-title">2,062</h3>
+                            <h3 class="card-title">(United States)</h3>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-info mb-3">
+                            <div class="card-header">Total Cases</div>
+                            <h3 class="card-title">3,307,600</h3>
+                            <h3 class="card-title">(World)</h3>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-danger mb-3">
+                            <div class="card-header">Total Deaths</div>
+                            <h3 class="card-title">238,431</h3>
+                            <h3 class="card-title">(World)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white" style="text-align: center;">
+                    <h5>Updated as of 2020/05/02</h5>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <section class="mbr-section mbr-section--relative mbr-section--short-paddings mbr-after-navbar"
+            data-rv-view="98" id="msg-box1-w" style="background-color: rgb(29, 31, 30);">
+            <div class="mbr-section__container mbr-section__container--isolated container"
+                style="padding-top: 60px; padding-bottom: 60px;">
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- <iframe src="/assets/covid-19/total_cases.html" width="100%" height="800" style="border: none;" seamless="seamless" scrolling='no'></iframe> -->
+                        <!-- <iframe scrolling="no" seamless="seamless" src="assets/covid-19/total_cases.html" style="border: none;" width="100%" height="800" ></iframe> -->
+                        <iframe class="embed-responsive-item" src="assets/covid-19/total_cases.html"></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- <iframe height="800" scrolling="no" seamless="seamless" src="assets/covid-19/total_deaths.html" style="border: none;" width="100%"></iframe> -->
+                        <iframe class="embed-responsive-item" src="assets/covid-19/total_deaths.html"></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- <iframe height="800" scrolling="no" seamless="seamless" src="assets/covid-19/new_cases.html" style="border: none;" width="100%"></iframe> -->
+                        <iframe class="embed-responsive-item" src="assets/covid-19/new_cases.html"></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- <iframe height="800" scrolling="no" seamless="seamless" src="assets/covid-19/new_deaths.html" style="border: none;" width="100%"></iframe> -->
+                        <iframe class="embed-responsive-item" src="assets/covid-19/new_deaths.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-after-navbar" data-rv-view="214"
+        id="footer1-10" style="background-color: rgb(29, 31, 30);">
+        <div class="mbr-section__container container">
+            <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 36.9px; padding-bottom: 36.9px;">
+                <div class="col-sm-12">
+                    <p class="mbr-footer__copyright">Copyright (c) 2020. <a class="mbr-footer__link text-gray"
+                            href="https://mobirise.com/">Terms of Use</a> | <a class="mbr-footer__link text-gray"
+                            href="https://mobirise.com/">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5"></script>
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script src="assets/facebook-plugin/facebook-script.js"></script>
+    <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+    <script src="assets/mobirise/js/script.js"></script>
+    <script src="assets/dropdown-menu/script.js"></script>
+</body>
+
+</html>

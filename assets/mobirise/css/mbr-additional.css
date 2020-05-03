@@ -24,6 +24,35 @@
 #msg-box3-3 .mbr-header .mbr-header__subtext {
   text-align: center;
 }
+#dropdown-menu-p .hide-buttons [data-button] {
+  display: none !important;
+}
+#dropdown-menu-p .nav .link,
+#dropdown-menu-p .dropdown-item {
+  font-size: 1em;
+  color: #ffffff;
+}
+#dropdown-menu-p .navbar,
+#dropdown-menu-p .dropdown-menu {
+  background: #1d1f1e;
+}
+#dropdown-menu-p .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-p .dropdown-menu a:hover,
+#dropdown-menu-p .dropdown-menu a:focus {
+  background: #131414;
+}
+#dropdown-menu-p .navbar-toggler {
+  color: #ffffff;
+}
+#msg-box4-r .mbr-header__text {
+  color: #ffffff;
+}
+#msg-box4-r .mbr-header__subtext {
+  color: #ffffff;
+}
+#msg-box4-r .mbr-article {
+  color: #ffffff;
+}
 #dropdown-menu-d .hide-buttons [data-button] {
   display: none !important;
 }
@@ -70,32 +99,49 @@
 #dropdown-menu-8 .navbar-toggler {
   color: #ffffff;
 }
-#dropdown-menu-p .hide-buttons [data-button] {
+#dropdown-menu-u .hide-buttons [data-button] {
   display: none !important;
 }
-#dropdown-menu-p .nav .link,
-#dropdown-menu-p .dropdown-item {
+#dropdown-menu-u .nav .link,
+#dropdown-menu-u .dropdown-item {
   font-size: 1em;
   color: #ffffff;
 }
-#dropdown-menu-p .navbar,
-#dropdown-menu-p .dropdown-menu {
+#dropdown-menu-u .navbar,
+#dropdown-menu-u .dropdown-menu {
   background: #1d1f1e;
 }
-#dropdown-menu-p .dropdown-menu .dropdown-toggle[aria-expanded="true"],
-#dropdown-menu-p .dropdown-menu a:hover,
-#dropdown-menu-p .dropdown-menu a:focus {
+#dropdown-menu-u .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-u .dropdown-menu a:hover,
+#dropdown-menu-u .dropdown-menu a:focus {
   background: #131414;
 }
-#dropdown-menu-p .navbar-toggler {
+#dropdown-menu-u .navbar-toggler {
   color: #ffffff;
 }
-#msg-box4-r .mbr-header__text {
+#msg-box1-w .mbr-header .mbr-header__text {
+  color: #fff;
+}
+#msg-box1-w .mbr-article {
+  color: #fff;
+}
+#dropdown-menu-z .hide-buttons [data-button] {
+  display: none !important;
+}
+#dropdown-menu-z .nav .link,
+#dropdown-menu-z .dropdown-item {
+  font-size: 1em;
   color: #ffffff;
 }
-#msg-box4-r .mbr-header__subtext {
-  color: #ffffff;
+#dropdown-menu-z .navbar,
+#dropdown-menu-z .dropdown-menu {
+  background: #1d1f1e;
 }
-#msg-box4-r .mbr-article {
+#dropdown-menu-z .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-z .dropdown-menu a:hover,
+#dropdown-menu-z .dropdown-menu a:focus {
+  background: #131414;
+}
+#dropdown-menu-z .navbar-toggler {
   color: #ffffff;
 }
