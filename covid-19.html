@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="menu menu2 cid-sfqN5OKC4E" once="menu" id="menu2-3">
@@ -57,23 +58,23 @@
                     <div class="col">
                         <div class="card bg-info mb-3">
                             <div class="card-header">Most Daily Cases</div>
-                            <h3 class="card-title">83883.0</h3>
-                            <h3 class="card-title">(United States)</h3>
+                            <h3 class="card-title" id="stat_most_daily_cases">83883.0</h3>
+                            <h3 class="card-title" id="stat_most_daily_cases_country">(United States)</h3>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card bg-danger mb-3">
                             <div class="card-header">Most Daily Deaths</div>
-                            <h3 class="card-title">555.0</h3>
-                            <h3 class="card-title">(United States)</h3>
+                            <h3 class="card-title" id="stat_most_daily_deaths">555.0</h3>
+                            <h3 class="card-title" id="stat_most_daily_deaths_country">(United States)</h3>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card bg-info mb-3">
                             <div class="card-header">Total Cases</div>
-                            <h3 class="card-title">47093222.0</h3>
+                            <h3 class="card-title" id="stat_total_cases">47093222.0</h3>
                             <h3 class="card-title">(World)</h3>
                         </div>
                     </div>
@@ -81,13 +82,13 @@
                     <div class="col">
                         <div class="card bg-danger mb-3">
                             <div class="card-header">Total Deaths</div>
-                            <h3 class="card-title">1207290.0</h3>
+                            <h3 class="card-title" id="stat_total_deaths">1207290.0</h3>
                             <h3 class="card-title">(World)</h3>
                         </div>
                     </div>
                 </div>
                 <div class="text-black" style="text-align: center;">
-                    <h5>Updated as of 2020/11/03</h5>
+                    <h5 id="stat_update_date">Updated as of 2020/11/03</h5>
                 </div>
             </div>
         </section>
@@ -123,20 +124,41 @@
   
 </body>
 <script>
-    var txtFile = new XMLHttpRequest();
-    txtFile.onload = function() {
-        allText = txtFile.responseText;
-        allTextLines = allText.split(/\r\n|\n/);
-
-        for(var i = 0; i < allTextLines.length; i++) {
-            // document.body.innerHTML += allTextLines[i];
-            // document.body.innerHTML += '<br/>';
-            console.log(i, allTextLines[i]);
-        }
-        
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    txtFile.open("get", "assets/covid-19/stat.csv", true);
-    txtFile.send();
+    $(document).ready(function() {
+        var txtFile = new XMLHttpRequest();
+        txtFile.onload = function() {
+            allText = txtFile.responseText;
+            allTextLines = allText.split(/\r\n|\n/);
+
+            // for(var i = 0; i < allTextLines.length; i++) {
+            //     // document.body.innerHTML += allTextLines[i];
+            //     // document.body.innerHTML += '<br/>';
+            //     console.log(i, allTextLines[i]);
+            // }
+            
+        }
+
+        txtFile.open("get", "assets/covid-19/stat.csv", true);
+        txtFile.send();
+
+        // var stat_most_daily_cases = document.getElementById("stat_most_daily_cases");
+        // var stat_most_daily_deaths = document.getElementById("stat_most_daily_deaths");
+        // var stat_total_cases = document.getElementById("stat_total_cases");
+        // var stat_total_deaths = document.getElementById("stat_total_deaths");
+        // stat_most_daily_cases.innerHTML = allTextLines[0];
+        // val = numberWithCommas(val);
+
+        $('#stat_most_daily_cases').text(numberWithCommas(allTextLines[0]));
+        $('#stat_most_daily_deaths').text(numberWithCommas(allTextLines[1]));
+        $('#stat_most_daily_cases_country').text(allTextLines[2]);
+        $('#stat_most_daily_deaths_country').text(allTextLines[3]);
+        $('#stat_total_cases').text(numberWithCommas(allTextLines[4]));
+        $('#stat_total_deaths').text(numberWithCommas(allTextLines[5]));
+        $('#stat_update_date').text("Updated as of " + allTextLines[6]);
+    });
 </script>
 </html>
