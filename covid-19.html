@@ -145,13 +145,6 @@
         txtFile.open("get", "assets/covid-19/stat.csv", true);
         txtFile.send();
 
-        // var stat_most_daily_cases = document.getElementById("stat_most_daily_cases");
-        // var stat_most_daily_deaths = document.getElementById("stat_most_daily_deaths");
-        // var stat_total_cases = document.getElementById("stat_total_cases");
-        // var stat_total_deaths = document.getElementById("stat_total_deaths");
-        // stat_most_daily_cases.innerHTML = allTextLines[0];
-        // val = numberWithCommas(val);
-
         $('#stat_most_daily_cases').text(numberWithCommas(allTextLines[0]));
         $('#stat_most_daily_deaths').text(numberWithCommas(allTextLines[1]));
         $('#stat_most_daily_cases_country').text(allTextLines[2]);
