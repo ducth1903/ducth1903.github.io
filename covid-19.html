@@ -133,15 +133,10 @@
         allText = txtFile.responseText;
         allTextLines = allText.split(/\r\n|\n/);
 
-        for(var i = 0; i < allTextLines.length; i++) {
-            // document.body.innerHTML += allTextLines[i];
-            // document.body.innerHTML += '<br/>';
-            console.log(i, allTextLines[i], allTextLines[i].split(", ")[1]);
-        }
         $('#stat_most_daily_cases').text(numberWithCommas(allTextLines[0].split(", ")[1]));
         $('#stat_most_daily_deaths').text(numberWithCommas(allTextLines[1].split(", ")[1]));
-        $('#stat_most_daily_cases_country').text(allTextLines[2].split(", ")[1]);
-        $('#stat_most_daily_deaths_country').text(allTextLines[3].split(", ")[1]);
+        $('#stat_most_daily_cases_country').text("("+allTextLines[2].split(", ")[1]+")");
+        $('#stat_most_daily_deaths_country').text("("+allTextLines[3].split(", ")[1]+")");
         $('#stat_total_cases').text(numberWithCommas(allTextLines[4].split(", ")[1]));
         $('#stat_total_deaths').text(numberWithCommas(allTextLines[5].split(", ")[1]));
         $('#stat_update_date').text("Updated as of " + allTextLines[6].split(", ")[1]);
