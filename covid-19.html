@@ -128,30 +128,28 @@
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    $(document).ready(function() {
-        var txtFile = new XMLHttpRequest();
-        txtFile.onload = function() {
-            allText = txtFile.responseText;
-            allTextLines = allText.split(/\r\n|\n/);
+    var txtFile = new XMLHttpRequest();
+    txtFile.onload = function() {
+        allText = txtFile.responseText;
+        allTextLines = allText.split(/\r\n|\n/);
 
-            // for(var i = 0; i < allTextLines.length; i++) {
-            //     // document.body.innerHTML += allTextLines[i];
-            //     // document.body.innerHTML += '<br/>';
-            //     console.log(i, allTextLines[i]);
-            // }
-            
-        }
+        // for(var i = 0; i < allTextLines.length; i++) {
+        //     // document.body.innerHTML += allTextLines[i];
+        //     // document.body.innerHTML += '<br/>';
+        //     console.log(i, allTextLines[i]);
+        // }
+        
+    }
 
-        txtFile.open("get", "assets/covid-19/stat.csv", true);
-        txtFile.send();
+    txtFile.open("get", "assets/covid-19/stat.csv", true);
+    txtFile.send();
 
-        $('#stat_most_daily_cases').text(numberWithCommas(allTextLines[0]));
-        $('#stat_most_daily_deaths').text(numberWithCommas(allTextLines[1]));
-        $('#stat_most_daily_cases_country').text(allTextLines[2]);
-        $('#stat_most_daily_deaths_country').text(allTextLines[3]);
-        $('#stat_total_cases').text(numberWithCommas(allTextLines[4]));
-        $('#stat_total_deaths').text(numberWithCommas(allTextLines[5]));
-        $('#stat_update_date').text("Updated as of " + allTextLines[6]);
-    });
+    $('#stat_most_daily_cases').text(numberWithCommas(allTextLines[0]));
+    $('#stat_most_daily_deaths').text(numberWithCommas(allTextLines[1]));
+    $('#stat_most_daily_cases_country').text(allTextLines[2]);
+    $('#stat_most_daily_deaths_country').text(allTextLines[3]);
+    $('#stat_total_cases').text(numberWithCommas(allTextLines[4]));
+    $('#stat_total_deaths').text(numberWithCommas(allTextLines[5]));
+    $('#stat_update_date').text("Updated as of " + allTextLines[6]);
 </script>
 </html>
